@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="container row">
+        <div class="col-3 d-flex flex-column align-items-center">
+            <div class="d-flex flex-column align-items-center">
+                <img class="user-avatar-profile rounded-circle" src="/{{ user.avatar }}" alt="">
+                <span>{{ user.username }}</span>
+            </div>
+            
+        </div>
+        <div class="col-9 d-flex flex-column align-items-center">
+            posts
+        </div>
+    </div>
+{% endblock %}
